@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# User data — NEVER commit
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+/storage/backups/*
+!/storage/backups/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# Build artifacts
+/public/assets/css/app.css.map
+
+# Local DB dumps
+*.sql.gz
+*.dump
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
